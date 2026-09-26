@@ -1,0 +1,11 @@
+name: personal
+services:
+  mysql:
+    image: 'mysql:8'
+    environment:
+      - 'MYSQL_DATABASE=config'
+      - 'MYSQL_PASSWORD=secret'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=app_user'
+    ports:
+      - "3306:3306"
